@@ -1,0 +1,623 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  list-style-type: none;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  /* width: 600px; */
+  /* margin: auto; */
+  /* background: url(/images/images.jpg) no-repeat center;
+  background-size: cover; */
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+/* UNIVERSAL */
+html {
+  scroll-behavior: smooth;
+  /* background: #d7b38c; */
+  /* background: linear-gradient( 100deg, #d7b38c, #d7b38c,rgba(255,255,255,0.2),rgba(255,255,255,0.9) ); */
+
+  /* background: linear-gradient(145deg,#f6b323,); */
+  /* background: linear-gradient(57deg, #f6b323 60%, #d7b38c 20%); */
+
+  /* #f23b26 */
+}
+
+/* all paragraph text */
+p {
+  font-size: 15px;
+  font-weight: 200;
+  font-family: poppins;
+}
+/* home style */
+.first {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    position: relative;
+}
+.first::after{
+
+}
+.head11::after{
+  content: "";
+  height: 3px;
+  width: 80%;
+  position: absolute;
+  background-color: tomato;
+  left: 15px;
+  bottom: -5px;
+}
+
+/* all headings */
+.head11 {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 33px;
+  margin-top: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    position: relative;
+    width: fit-content;
+    margin: 1rem auto;
+}
+/* UNIVERSAL ENDS */
+/* ----------navbar */
+
+/* --------------home */
+.set {
+  display: flex;
+  margin: auto;
+}
+.first {
+  height: 100vh;
+  width: 100%;
+
+  /* background: linear-gradient(145deg, #f6b323 , #d7b38c ,white); */
+  /* background:url(/images/on-the-road.gif)no-repeat center;
+  background-size:cover; */
+  /* background: url(/images/images.jpg) no-repeat center;
+  background-size: cover; */
+  background: #1a1a1a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* border-bottom: 2px solid white; */
+}
+.rotate {
+  color: white;
+  font-size: 3.7rem;
+  display: block;
+  font-weight: bolder;
+  /* background: url(/images/textback.jpg) no-repeat center ;
+  background-size: cover;
+  background-clip:border-box; */
+}
+.home {
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+.head {
+  font-size: 2.5rem;
+}
+.ht {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+}
+.image {
+  margin-left: auto;
+}
+.imgkkk {
+  height: 400px;
+}
+.music-img{
+  /* margin-top: 50px; */
+  cursor: pointer;
+  width: fit-content;
+  margin: 40px auto;
+  /* background-color: red;
+  display: flex;
+  border-radius: 20px;
+  padding: 1px;
+  position: relative; */
+  outline: none;
+}
+/* .music-img img{
+  margin-right: auto;
+} */
+.giffy{
+  height: 40px;
+  width: 60px;
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .image {
+    display: none;
+  }
+}
+@media (min-width: 530px) and (max-width: 630px) {
+  .image {
+    display: none;
+  }
+  .rotate {
+    display: block;
+    font-size: 4rem;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+  .subtitle {
+    font-size: x-large;
+  }
+}
+@media (min-height: 700px) and (min-width: 700px) {
+  .image {
+    display: none;
+  }
+  .rotate {
+    display: block;
+    font-size: 6rem;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+  .subtitle {
+    font-size: x-large;
+  }
+  .aboutc {
+    font-size: large;
+  }
+}
+@media (min-width: 1100px) {
+  .first {
+    margin: 0 auto;
+  }
+  .home {
+    margin-left: auto;
+  }
+  .image {
+    margin-right: auto;
+  }
+}
+
+/*---------------------------ABOUT-----------------------------*/
+
+.aboutc {
+  height: max-content;
+  display: flex;
+  width: 100%;
+}
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+
+.container {
+  display: flex;
+  margin: 2rem 2rem;
+}
+.img1 {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 40rem;
+}
+.text {
+  text-align: justify;
+  text-indent: 30px;
+  padding: 3rem 0 0 1.5rem;
+}
+.button-area1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+}
+.button-area1 a {
+  text-decoration: none;
+}
+.button-area1 button {
+  color: #fff;
+  display: block;
+  width: 150px !important;
+  height: 40px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: black;
+  border: 2px solid BLACK;
+  transition: all 0.5s ease;
+}
+
+.button-area1 button:hover {
+  color: black;
+  background: rgb(168, 240, 230);
+  border: none;
+}
+
+@media only screen and (max-width: 330px) {
+  .container {
+    margin: 1rem 2rem;
+  }
+  .img1 {
+    height: 12rem;
+    width: 12rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.2);
+  }
+  .text {
+    padding: 2.5rem 1rem 0 0.5rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .rotate {
+    font-size: 2.3rem;
+  }
+  .head {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .img1 {
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .container {
+    width: 50rem;
+    margin: 2rem 1rem;
+  }
+}
+
+/* --------SKILLS----------------- */
+
+.fled {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.sectext {
+  text-align: center;
+  text-indent: 25px;
+  margin: 1rem 2rem 2rem 2rem;
+}
+
+.skillbar {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px 30px;
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  
+}
+
+.bar {
+  margin: 20px 0;
+  
+}
+.bar:first-child {
+  margin-top: 0;
+}
+.bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+}
+.bar .barline {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+    0px 1px rgba(255, 255, 255, 0.8);
+}
+.bar .barline span {
+  height: 100%;
+  width: 80%;
+  background: tomato;
+  position: absolute;
+  border-radius: 10px;
+}
+.barline.html span {
+  width: 80%;
+}
+.barline.css span {
+  width: 75%;
+}
+.barline.js span {
+  width: 40%;
+}
+.barline.mysql span {
+  width: 60%;
+}
+.barline.py span {
+  width: 30%;
+}
+
+.barline::after {
+  position: absolute;
+  right: 0;
+  top: -25px;
+
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  background: #000;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+.barline.html::after {
+  content: "80%";
+}
+.barline.css::after {
+  content: "75%";
+}
+.barline.js::after {
+  content: "40%";
+}
+.barline.mysql::after {
+  content: "60%";
+}
+.barline.py::after {
+  content: "30%";
+}
+@media only screen and (min-width: 990px) {
+  .fled {
+    width: 50rem;
+    margin: 2rem auto;
+    flex-direction: column;
+  }
+  .skillbar {
+    width: 40rem;
+  }
+}
+
+/* my projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  /* margin: rem; */
+  padding: 1em 0;
+  justify-content: center;
+  align-items: center;
+}
+.header1 {
+  font-size: 2rem;
+}
+.protext {
+  text-align: center;
+  text-indent: 25px;
+  margin: 1rem auto;
+  width: 80%;
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+  .protext {
+    width: 51rem;
+  }
+}
+
+/* ------CONTACT------------ */
+.conta {
+  /* background: #e4ba60; */
+  background: url(/images/images.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  height: auto;
+  position: relative;
+  padding: 1rem;
+}
+.conta-t {
+  font-weight: 800;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.cc {
+  text-align: center;
+}
+.dummy {
+  display: flex;
+  margin: 2rem auto;
+}
+.follo-me {
+  /* font-weight: 800; */
+  margin-top: 30px;
+  color: white;
+  /* text-align: center; */
+}
+.feviconss {
+  display: grid;
+  text-align: justify;
+
+    /* justify-content: center;
+    align-items: center; */
+  /* margin-top: 5px; */
+  flex-direction: column;
+
+  /* height: 15px; */
+  /* width: 1; */
+}
+.row1{
+  margin-top: 10px;
+}
+.row1,
+.row2 {
+  display: flex;
+  padding: 3px;
+}
+.feviconss a {
+  /* text-decoration: none; */
+  color: #000;
+  font-weight: 600;
+  
+}
+.feviconss a:hover{
+  
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.fb,
+.twit,
+.insta,
+.link,.github,.discord {
+  /* height: 15px;
+  width: 33px; */
+
+  margin: 0 25px 0 0;
+}
+.form1 {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  text-align: justify;
+  text-indent: 29px;
+  margin-right: 20px;
+}
+.pa {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.add {
+  padding: 2rem;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.form2 {
+  margin-left: 1rem;
+}
+@media only screen and (max-width: 730px) {
+  .form1 {
+    width: 100%;
+  }
+  .add {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  .dummy {
+    flex-direction: column;
+  }
+}
+.lj {
+  margin-top: 1.3rem;
+}
+form .fields {
+  display: flex;
+}
+form .field,
+form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+form .textarea {
+  height: 80px;
+  width: 100%;
+}
+form .name {
+  margin-right: 10px;
+}
+form .field input,
+form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.8s ease;
+}
+form .field input:focus,
+form .textarea textarea:focus {
+  border-color: #b3b3b3;
+}
+form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+form .button-area {
+  display: flex;
+  align-items: center;
+}
+form .button-area button {
+  color: #fff;
+  display: block;
+  width: 160px !important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: black;
+
+  transition: all 0.5s ease;
+}
+form .button-area button:hover {
+  color: black;
+  background: rgb(168, 240, 230);
+  border: none;
+}
+.ge {
+  font-size: 1.2em;
+  font-weight: 900;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* bottom */
+.dd {
+  width: 100%;
+  padding: 15px;
+  color: white;
+  background-color: black;
+}
+.j {
+  text-align: center;
+  font-size: smaller;
+}
