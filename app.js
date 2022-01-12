@@ -1,8 +1,9 @@
 
 //    rightclick prevention
- document.querySelector('body').addEventListener('contextmenu',(e) => {
- e.preventDefault();
- })
+  document.querySelector('body').addEventListener('contextmenu',(e) => {
+e.preventDefault();
+ }
+ )
 
 
 // create a play buttom
